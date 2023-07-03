@@ -26,9 +26,10 @@
         android:layout_below="@+id/calicon"
         android:textAlignment="center"
         android:layout_marginTop="300dp"
-        android:text="Calculator"
+        android:text="@string/calculator"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="60sp"
+        android:fontFamily="@font/satisfy_regular"
         android:textStyle="bold" />
 
 </RelativeLayout>
