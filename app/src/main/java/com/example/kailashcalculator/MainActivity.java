@@ -291,6 +291,7 @@ public class MainActivity extends AppCompatActivity {
                     res1 = res1+Float.parseFloat(result.getText()+"");
 
                     add = true;
+                    dot = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"+");
                 }
@@ -299,6 +300,7 @@ public class MainActivity extends AppCompatActivity {
                     res1 = res1-Float.parseFloat(result.getText()+"");
 
                     add = true;
+                    dot = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"+");
                 }
@@ -307,6 +309,7 @@ public class MainActivity extends AppCompatActivity {
                     res1 = res1*Float.parseFloat(result.getText()+"");
 
                     add = true;
+                    dot = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"+");
                 }
@@ -315,12 +318,13 @@ public class MainActivity extends AppCompatActivity {
                     res1 = res1/Float.parseFloat(result.getText()+"");
 
                     add = true;
+                    dot = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"+");
                 }
                 else {
                     res1 = Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     add = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"+");
@@ -336,7 +340,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(add)
                 {
                     res1 = res1+Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     sub = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"-");
@@ -344,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(sub)
                 {
                     res1 = res1-Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     sub = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"-");
@@ -352,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(mul)
                 {
                     res1 = res1*Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     sub = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"-");
@@ -360,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(div)
                 {
                     res1 = res1/Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     sub = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"-");
@@ -382,7 +386,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(add)
                 {
                     res1 = res1+Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     mul = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"X");
@@ -390,7 +394,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(sub)
                 {
                     res1 = res1-Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     mul = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"X");
@@ -398,7 +402,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(mul)
                 {
                     res1 = res1*Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     mul = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"X");
@@ -406,13 +410,14 @@ public class MainActivity extends AppCompatActivity {
                 else if(div)
                 {
                     res1 = res1/Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     mul = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"X");
                 }
                 else {
                     res1 = Float.parseFloat(result.getText()+"");
+                    dot = true;
                     mul = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"X");
@@ -428,7 +433,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(add)
                 {
                     res1 = res1+Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     div = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"/");
@@ -436,7 +441,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(sub)
                 {
                     res1 = res1-Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     div = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"/");
@@ -444,7 +449,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(mul)
                 {
                     res1 = res1*Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     div = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"/");
@@ -452,13 +457,14 @@ public class MainActivity extends AppCompatActivity {
                 else if(div)
                 {
                     res1 = res1/Float.parseFloat(result.getText()+"");
-
+                    dot = true;
                     div = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"/");
                 }
                 else {
                     res1 = Float.parseFloat(result.getText()+"");
+                    dot = true;
                     div = true;
                     result.setText(null);
                     answer.setText(answer.getText()+"/");
@@ -474,6 +480,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     res1 = (float) (Float.parseFloat(result.getText()+"")/100);
+                    dot = false;
                     result.setText(res1+"");
                     answer.setText(answer.getText()+"%");
                 }
@@ -493,18 +500,21 @@ public class MainActivity extends AppCompatActivity {
                     res1 =0;
                     res2 =0;
                     add = false;
+                    dot = true;
                 } else if (sub) {
                     result.setText(res1-res2+"");
                     answer.setText(res1-res2+"");
                     res1 =0;
                     res2 =0;
                     sub = false;
+                    dot = true;
                 }else if (mul) {
                     result.setText(res1*res2+"");
                     answer.setText(res1*res2+"");
                     res1 =0;
                     res2 =0;
                     mul = false;
+                    dot = true;
                 }
                 else if (div) {
                     result.setText(res1/res2+"");
@@ -512,6 +522,7 @@ public class MainActivity extends AppCompatActivity {
                     res1 =0;
                     res2 =0;
                     div = false;
+                    dot = true;
                 }
             }
         });
@@ -529,6 +540,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 result.setText("0");
                 answer.setText("0");
+                dot = true;
                 res1 =0;
                 res2 =0;
             }
