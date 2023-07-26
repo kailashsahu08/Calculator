@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,b00,bdot,badd,bsub,bmul,bdiv,bac,bequal,bclr,bprcnt;
     TextView answer,result;
     boolean add,sub,mul,div,equal,dot=true;
+    String s="";
     float res1,res2;
 
     @Override
@@ -45,17 +46,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("1");
+                    s="1";
+                    result.setText("="+s);
                     answer.setText("1");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("1");
+                    s="1";
+                    result.setText("="+s);
                     answer.setText("1");
                 }
                 else {
-                    result.setText(result.getText()+"1");
+                    s+="1";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"1");
                 }
             }
@@ -65,17 +69,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("2");
+                    s="2";
+                    result.setText("="+s);
                     answer.setText("2");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("2");
+                    s="2";
+                    result.setText("="+s);
                     answer.setText("2");
                 }
                 else {
-                    result.setText(result.getText()+"2");
+                    s+="2";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"2");
                 }
             }
@@ -85,17 +92,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("3");
+                    s="3";
+                    result.setText("="+s);
                     answer.setText("3");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("3");
+                    s="3";
+                    result.setText("="+s);
                     answer.setText("3");
                 }
                 else {
-                    result.setText(result.getText()+"3");
+                    s+="3";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"3");
                 }
             }
@@ -105,17 +115,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("4");
+                    s="4";
+                    result.setText("="+s);
                     answer.setText("4");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("4");
+                    s="4";
+                    result.setText("="+s);
                     answer.setText("4");
                 }
                 else {
-                    result.setText(result.getText()+"4");
+                    s+="4";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"4");
                 }
             }
@@ -125,17 +138,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("5");
+                    s="5";
+                    result.setText("="+s);
                     answer.setText("5");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("5");
+                    s="5";
+                    result.setText("="+s);
                     answer.setText("5");
                 }
                 else {
-                    result.setText(result.getText()+"5");
+                    s+="5";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"5");
                 }
             }
@@ -145,17 +161,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("6");
+                    s="6";
+                    result.setText("="+s);
                     answer.setText("6");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("6");
+                    s="6";
+                    result.setText("="+s);
                     answer.setText("6");
                 }
                 else {
-                    result.setText(result.getText()+"6");
+                    s+="6";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"6");
                 }
             }
@@ -165,17 +184,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("7");
+                    s="7";
+                    result.setText("="+s);
                     answer.setText("7");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("7");
+                    s="7";
+                    result.setText("="+s);
                     answer.setText("7");
                 }
                 else {
-                    result.setText(result.getText()+"7");
+                    s+="7";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"7");
                 }
             }
@@ -185,17 +207,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("8");
+                    s="8";
+                    result.setText("="+s);
                     answer.setText("8");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("8");
+                    s="8";
+                    result.setText("="+s);
                     answer.setText("8");
                 }
                 else {
-                    result.setText(result.getText()+"8");
+                    s+="8";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"8");
                 }
             }
@@ -205,17 +230,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("9");
+                    s="9";
+                    result.setText("="+s);
                     answer.setText("9");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("9");
+                    s="9";
+                    result.setText("="+s);
                     answer.setText("9");
                 }
                 else {
-                    result.setText(result.getText()+"9");
+                    s+="9";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"9");
                 }
             }
@@ -225,17 +253,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("0");
+                    s="0";
+                    result.setText("="+s);
                     answer.setText("0");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("0");
+                    s="0";
+                    result.setText("="+s);
                     answer.setText("0");
                 }
                 else {
-                    result.setText(result.getText()+"0");
+                    s+="0";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"0");
                 }
             }
@@ -245,17 +276,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(equal)
                 {
-                    result.setText("00");
+                    s="00";
+                    result.setText("="+s);
                     answer.setText("00");
                     equal = false;
                 }
-                else if(result.getText().toString().equals("0"))
+                else if(s.equals("0"))
                 {
-                    result.setText("00");
+                    s="00";
+                    result.setText("="+s);
                     answer.setText("00");
                 }
                 else {
-                    result.setText(result.getText()+"00");
+                    s+="00";
+                    result.setText("="+s);
                     answer.setText(answer.getText()+"00");
                 }
             }
@@ -267,13 +301,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     if(equal)
                     {
-                        result.setText(".");
+                        s = ".";
+                        result.setText(s);
                         answer.setText(".");
                         dot = false;
                         equal = false;
                     }
                     else {
-                        result.setText(result.getText()+".");
+                        s+=".";
+                        result.setText(s);
                         answer.setText(answer.getText()+".");
                         dot = false;
                     }
@@ -283,31 +319,33 @@ public class MainActivity extends AppCompatActivity {
         badd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(result==null){
-                    result.setText("0");
+                if(s.equals("")){
+                    if(res1!=0) result.setText("="+res1);
+                    else result.setText(s);
+                    answer.setText(answer.getText().toString());
                 }
                 else if(add)
                 {
-                    res1 = res1+Float.parseFloat(result.getText()+"");
-
+                    res1 = res1+Float.parseFloat(s);
+                    s = "";
                     add = true;
                     dot = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"+");
                 }
                 else if(sub)
                 {
-                    res1 = res1-Float.parseFloat(result.getText()+"");
-
+                    res1 = res1-Float.parseFloat(s);
+                    s = "";
                     add = true;
                     dot = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"+");
                 }
                 else if(mul)
                 {
-                    res1 = res1*Float.parseFloat(result.getText()+"");
-
+                    res1 = res1*Float.parseFloat(s);
+                    s = "";
                     add = true;
                     dot = true;
                     result.setText(null);
@@ -315,18 +353,19 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(div)
                 {
-                    res1 = res1/Float.parseFloat(result.getText()+"");
-
+                    res1 = res1/Float.parseFloat(s);
+                    s = "";
                     add = true;
                     dot = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"+");
                 }
                 else {
-                    res1 = Float.parseFloat(result.getText()+"");
+                    res1 = Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     add = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"+");
                 }
             }
@@ -334,45 +373,53 @@ public class MainActivity extends AppCompatActivity {
         bsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(result==null){
-                    result.setText("0");
+                if(s.equals("")){
+                    if(res1!=0) result.setText("="+res1);
+                    else result.setText(s);
+                    answer.setText(answer.getText().toString());
                 }
                 else if(add)
                 {
-                    res1 = res1+Float.parseFloat(result.getText()+"");
+                    res1 = res1+Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     sub = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"-");
                 }
                 else if(sub)
                 {
-                    res1 = res1-Float.parseFloat(result.getText()+"");
+                    res1 = res1-Float.parseFloat(s);
+                    s="";
                     dot = true;
                     sub = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"-");
                 }
                 else if(mul)
                 {
-                    res1 = res1*Float.parseFloat(result.getText()+"");
+                    res1 = res1*Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     sub = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"-");
                 }
                 else if(div)
                 {
-                    res1 = res1/Float.parseFloat(result.getText()+"");
+                    res1 = res1/Float.parseFloat(s);
+                    s="";
                     dot = true;
                     sub = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"-");
                 }
                 else {
-                    res1 = Float.parseFloat(result.getText()+"");
+                    res1 = Float.parseFloat(s);
+                    s = "";
                     sub = true;
-                    result.setText(null);
+                    dot=true;
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"-");
                 }
             }
@@ -380,46 +427,53 @@ public class MainActivity extends AppCompatActivity {
         bmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(result==null){
-                    result.setText("0");
+                if(s.equals("")){
+                    if(res1!=0) result.setText("="+res1);
+                    else result.setText(s);
+                    answer.setText(answer.getText().toString());
                 }
                 else if(add)
                 {
-                    res1 = res1+Float.parseFloat(result.getText()+"");
+                    res1 = res1+Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     mul = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"X");
                 }
                 else if(sub)
                 {
-                    res1 = res1-Float.parseFloat(result.getText()+"");
+                    res1 = res1-Float.parseFloat(s);
+                    s="";
                     dot = true;
                     mul = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"X");
                 }
                 else if(mul)
                 {
-                    res1 = res1*Float.parseFloat(result.getText()+"");
+                    res1 = res1*Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     mul = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"X");
                 }
                 else if(div)
                 {
-                    res1 = res1/Float.parseFloat(result.getText()+"");
+                    res1 = res1/Float.parseFloat(s);
+                    s="";
                     dot = true;
                     mul = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"X");
                 }
                 else {
-                    res1 = Float.parseFloat(result.getText()+"");
-                    dot = true;
+                    res1 = Float.parseFloat(s);
+                    s = "";
                     mul = true;
-                    result.setText(null);
+                    dot=true;
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"X");
                 }
             }
@@ -427,46 +481,53 @@ public class MainActivity extends AppCompatActivity {
         bdiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(result==null){
-                    result.setText("0");
+                if(s.equals("")){
+                    if(res1!=0) result.setText("="+res1);
+                    else result.setText(s);
+                    answer.setText(answer.getText().toString());
                 }
                 else if(add)
                 {
-                    res1 = res1+Float.parseFloat(result.getText()+"");
+                    res1 = res1+Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     div = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"/");
                 }
                 else if(sub)
                 {
-                    res1 = res1-Float.parseFloat(result.getText()+"");
+                    res1 = res1-Float.parseFloat(s);
+                    s="";
                     dot = true;
                     div = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"/");
                 }
                 else if(mul)
                 {
-                    res1 = res1*Float.parseFloat(result.getText()+"");
+                    res1 = res1*Float.parseFloat(s);
+                    s = "";
                     dot = true;
                     div = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"/");
                 }
                 else if(div)
                 {
-                    res1 = res1/Float.parseFloat(result.getText()+"");
+                    res1 = res1/Float.parseFloat(s);
+                    s="";
                     dot = true;
                     div = true;
-                    result.setText(null);
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"/");
                 }
                 else {
-                    res1 = Float.parseFloat(result.getText()+"");
-                    dot = true;
+                    res1 = Float.parseFloat(s);
+                    s = "";
                     div = true;
-                    result.setText(null);
+                    dot=true;
+                    result.setText("="+res1);
                     answer.setText(answer.getText()+"/");
                 }
             }
@@ -474,24 +535,24 @@ public class MainActivity extends AppCompatActivity {
         bprcnt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(result==null){
-                    result.setText("0");
-                    answer.setText("0");
+                if(s.equals("")){
+                    if(res1!=0) result.setText("="+res1);
+                    else result.setText(s);
+                    answer.setText(answer.getText().toString());
                 }
                 else {
-                    res1 = (float) (Float.parseFloat(result.getText()+"")/100);
+                    res1 = (float) (Float.parseFloat(s)/100);
+                    s = res1+"";
                     dot = false;
-                    result.setText(res1+"");
-                    answer.setText(answer.getText()+"%");
+                    result.setText("="+s);
+                    answer.setText(answer.getText()+s);
                 }
-
-
             }
         });
         bequal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                res2 = Float.parseFloat(result.getText().toString());
+                res2 = Float.parseFloat(s);
                 equal = true;
                 if(add)
                 {
